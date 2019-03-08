@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GuruBanking Demo]">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtenetReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="gurudemo(failed)">
+    <classes>
+      <class name="gurudemo.logintest">
+        <methods>
+          <include name="verifyLoginpagelabelTest"/>
+          <include name="setup"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- gurudemo.logintest -->
+      <class name="gurudemo.hometest">
+        <methods>
+          <include name="clickonlogoutlinktest"/>
+          <include name="clickonnewcusttest"/>
+          <include name="clickonNewcustlinktest"/>
+        </methods>
+      </class> <!-- gurudemo.hometest -->
+    </classes>
+  </test> <!-- gurudemo(failed) -->
+</suite> <!-- Failed suite [GuruBanking Demo] -->

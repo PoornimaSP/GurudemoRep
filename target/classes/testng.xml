@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GuruBanking Demo" >
+
+ <listeners>
+		<listener class-name="ExtentReportListener.ExtenetReporterNG" />
+	</listeners>
+  <test name="gurudemo">
+    <classes>
+      <class name="gurudemo.logintest"/>
+      <class name="gurudemo.hometest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
